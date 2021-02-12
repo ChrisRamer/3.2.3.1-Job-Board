@@ -1,0 +1,17 @@
+<h1>Job Details</h1>
+
+<h2>@Model.Title</h2>
+<p>Description: @Model.Description</p>
+<p>Expectations:</p>
+<ul>
+	@foreach (string expectation in Model.Expectations)
+	{
+		<li>@expectation</li>
+	}
+</ul>
+<p>Wage: $@Model.Wage/hour</p>
+<p>Contact: @Model.ContactInfo</p>
+
+<a href="/jobs">View all job openings</a>
+<br>
+<a href="/jobs/new">Add a job opening</a>
